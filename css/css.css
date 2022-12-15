@@ -1,0 +1,41 @@
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+ #menu {
+    width: 100%;
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+ 
+.contenedor{
+    width: 1300px; 
+    margin: 0 auto 0 auto;
+}
+
+#menu ul{
+
+    display: flex;
+    padding: 10px;
+    list-style: none;
+
+}
+
+#menu li{
+    box-sizing: border-box;
+            width: 200px;
+            
+    margin-left:25px;
+    width: auto;
+
+}
+
+#menu li:hover{
+    background-color: yellow;
+}
+
+
+
+
