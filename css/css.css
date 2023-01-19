@@ -1,41 +1,364 @@
 
-body{
-    font-family: 'Roboto', sans-serif;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+ 
+  body {
+    font-family: "Roboto", sans-serif;
     font-size: 20px;
+  }
+  .fondo {
+    background-image: url("../imagenes/dbsbroly.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+  }
+  .separador {
+    height: 300px;
+  }
+  
+  #cabeza {
+    background-color: white;
+  }
+  /*contenido central*/
+  .content {
+    background-color: #f3f2f2;
+    padding: 10px;
+  }
+  .container-fluid {
+  width: 100%;
 }
- #menu {
+  .contenedor {
+    width: 1300px;
+    margin: 0 auto 0 auto;
+    padding: 20px 50px 0 50px;
+  }
+  .top2 {
+    border-bottom: 3px solid #fff10e;
+  }
+  .fila {
+    display: flex;
+  }
+  .menu {
+    display: flex;
+    align-items: center;
+  }
+  .menu ul {
     width: 100%;
-    font-family: 'Oswald', sans-serif;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .menu li {
+    list-style: none;
+  }
+  .menu li a {
+    color: black;
+    text-decoration: none;
+  }
+  .rowtop1 {
+    margin-bottom: 20px;
+  }
+  .rowtop1 ul {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 5px;
+  }
+  .rowtop1 ul li {
+    padding: 0 10px 0 10px;
+    list-style: none;
+  }
+  .rowtop1 ul li:last-child {
+    border-left: 1px solid grey;
+  }
+  .rowtop1 ul li a {
+    color: grey;
+  }
+  .rowtop1 ul li a:hover {
+    text-decoration: underline;
+  }
+  .logo_mini {
+    width: 30px;
+  }
+  .logo {
+    width: 400px;
+  }
+  .logo img {
+    width: 100%;
+    padding: 0 50px 0 50px;
+  }
+  .menu-top2 {
+    width: 100%;
+  }
+  .menu-top2 li {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+  }
+  .menu-top2 li:hover {
+    background-color: #ebe800;
+  }
+  
+  .menu-principal {
+    width: 100%;
+    font-family: "Oswald", sans-serif;
     font-size: 18px;
     font-weight: bold;
-}
- 
-.contenedor{
-    width: 1300px; 
-    margin: 0 auto 0 auto;
-}
-
-#menu ul{
-
-    display: flex;
+  }
+  .menu-principal li {
+    width: 120px;
+    margin: 0 5px 0 5px;
+    background-color: #d3d3d3;
     padding: 10px;
+    text-align: center;
+  }
+  .menu-principal li:hover {
+    background-color: #0076ec;
+  }
+  .menu-principal li:hover a {
+    color: white;
+  }
+  .menu-principal li a {
+    color: #0076ec; /*azul*/
+  }
+  .filtro {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .boton {
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+    font-family: "Oswald", sans-serif;
+  }
+  .boton-blanco {
+    background-color: white;
+    text-decoration: none;
+    color: #0076ec; /*azul*/
+    font-weight: bold;
+  }
+  .boton-blanco:hover {
+    background-color: #0076ec;
+    color: white;
+  }
+  .boton-azul {
+    background-color: #0076ec;
+    color: white;
+  }
+  .color-azul {
+    color: #0076ec;
+  }
+  .fichas {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .ficha {
+    width: 255px;
+    height: 500px;
+    border: 1px solid #d5d5d5;
+    box-shadow: 0px 1px 20px #d5d5d5;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    font-family: "Oswald", sans-serif;
+  }
+  .ficha h3 {
+    margin: 10px 0 10px 0;
+    color: #0076ec;
+  }
+  .ficha-img img {
+    width: 100%;
+    height: 350px;
+  }
+  .estrellas {
+    margin-top: 10px;
+    margin-left: -10px;
+    color: #fff10e;
+  }
+  
+  .ficha-botton {
+    margin-top: 10px;
+    margin: 0%;
+  }
+  
+  
+  h3 {
+    color: #004987;
+    margin-bottom: 10px;
+  }
+  
+  .col {
+    width: 100%;
+  }
+  .col ul li {
     list-style: none;
+    line-height: 1.7em;
+  }
+  .col ul li a {
+    text-decoration: none;
+    color: #808080;
+  }
+  footer {
+    margin: 0 20px 100px 20px;
+  }
+  footer i,
+  .boton-inferior i {
+    font-size: 50px;
+    color: #004987;
+  }
+  .iconos {
+    display: flex;
+    justify-content: center;
+  }
+  .iconos ul {
+    width: 600px;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .menu-bottom {
+    padding: 50px;
+  }
+  .boton-inferior {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+  }
 
+ .ficha1{
+  width: 25%;
+  border: 1px solid #d5d5d5;
+  box-shadow: 0px 1px 20px #d5d5d5;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 5px;
+  font-family: "Oswald", sans-serif;
+    
+ }
+
+ .ficha2{
+  width: 75%;
+  border: 1px solid #d5d5d5;
+  box-shadow: 0px 1px 20px #d5d5d5;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 5px;
+  font-family: "Oswald", sans-serif;
+
+ }
+
+ .mainseccion1{
+
+  width: 1300px;
+  display: flex;
+
+ }
+
+ .menu-principalficha {
+  width: 100%;
+  font-family: "Oswald", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  
+}
+.menu-principalficha li {
+  
+  
+  
+  padding: 12.5px;
+  text-align: center;
 }
 
-#menu li{
-    box-sizing: border-box;
-            width: 200px;
-            
-    margin-left:25px;
-    width: auto;
-
+.menu-principalficha li:hover a {
+  color: gray;
+  
 }
 
-#menu li:hover{
-    background-color: yellow;
+
+.menuprincipalfichagrande {
+  margin-top: 25px;
+  background-color: white;
+  width: 73.5%;
+  text-align: center;
+  margin-bottom: 25px;
+  
+  
+}
+.menuprincipalfichagrande li{
+  
+  color: #d8900bcb;
+  
 }
 
+.fichaimagenes{
+  
+  
+  background-color: white;
+  display: flex;
+ 
+}
+
+.portada1 img{
+  margin-top: 5px;
+  width:100%;
+  height: 350px;
+}
+
+.portada2 img{
+  margin-top: 5px;
+  margin-left: 10px;
+  width: 96.5%;
+  height: 350px;
+}
+
+.ficha-botton2{
+
+  margin-top: 365px;
+  margin-left: -740px;
+}
+.comparte2{
+  opacity: 0.2;
+  margin-left: 505px;
+}
+
+.contenedorfichas{
+  
+  
+  display: flex;
+}
+
+.informacion{
+  background-color: white;
+  
+  margin-left: 15px;
+  width: 35%;
+}
+
+.informacion p{
+  margin-top: 20px;
+  margin-left: 15px;
+  font-size: 15px;
+  
+}
+.sinopsis{
+
+  background-color: white;
+  margin-top: 15px;
+}
+.sinopsis p{
+  font-size: 15px;
+  padding: 20px;
+  
+  
+}
+
+a{
+  text-decoration: none;
+}
 
 
 
